@@ -233,3 +233,4 @@ game:GetService("Chat"):FindFirstChild("ChatLocalizationService").DescendantRemo
 			return
 		end
 	end)
+	--working
