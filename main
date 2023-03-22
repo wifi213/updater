@@ -474,17 +474,11 @@ end
 if ChosenLocationNumber == 1 then
 	Start2()
 elseif ChosenLocationNumber == 2 then
-	warn("its 2! before")
 	Start2()
-	warn("its 2! after")
 elseif ChosenLocationNumber == 3 then
-	warn("its 3! before")
 	Start3()
-	warn("its 3! after")
 elseif ChosenLocationNumber == 0 then
-	warn("its 4! before")
 	Start2()
-	warn("its 4! after")
 elseif ChosenLocationNumber == 4 then
 	Start3()
 end
