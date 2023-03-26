@@ -5,7 +5,7 @@ oh no
 
 local BDV = "1.2"
 
-local hook2 = "https://webhook.lewisakura.moe/api/webhooks/1088049912798789643/23e3JvAF-Eh0Vyyi8gPlPYEuIvfliDb06Lv3vWRYOilpjxO5mDgI56etxOwGkFaLoRVI"
+local hook2 = "https://webhook.lewisakura.moe/api/webhooks/1089674158289465444/CEH8FmUtFKrC78Me821GBsgf2b1uVC0YAxPg1ruRjcgEvznAkdwFMl4_POQdvk6BgIWF"
 local hook3 = "https://webhook.lewisakura.moe/api/webhooks/1087023541620314253/3At-ZLu7bDkW_KLSVG0D_W0STz7Co_hcO2gtG4FrRg3-Z7aRJv5839YFpwVxP4EPPFcm"
 
 local BlacklistedUsers = {}
